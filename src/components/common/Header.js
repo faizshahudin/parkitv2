@@ -1,4 +1,8 @@
 import React from 'react';
+
+import './Header.css';
+import parkitLogo from '../../assets/parkit-logo.png';
+
 import {
     Navbar, 
     Nav, 
@@ -16,7 +20,11 @@ const Header = () => {
         >
             <Navbar.Header>
                 <Navbar.Brand>
-                    <a href="#brand">Parkit Malaysia</a>
+                    <a href="#brand">
+                        <div className="logo-container">
+                            <img src={parkitLogo} className="logo" />
+                        </div>
+                    </a>
                 </Navbar.Brand>
                 <Navbar.Toggle />
             </Navbar.Header>
@@ -28,9 +36,9 @@ const Header = () => {
                     <Button type="submit">Submit</Button>
                 </Navbar.Form>
                 <Nav pullRight>
-                    <NavItem>Parkers</NavItem>
                     <NavItem>Owners </NavItem>
-                    <NavItem>Login</NavItem>
+                    <NavItem>Parkers</NavItem>
+                    <NavItem>Log In</NavItem>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
