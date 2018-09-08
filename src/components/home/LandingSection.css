@@ -1,0 +1,10 @@
+.landing-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: #000 1px solid;
+}
+
+.content {
+    border: #000 1px solid;
+}
